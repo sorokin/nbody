@@ -129,11 +129,8 @@ constexpr body sun =
     .mass = SOLAR_MASS,
 };
 
-class nbody_system {
-private:
-    std::array<body, 5> bodies;
-
-public:
+struct nbody_system
+{
     constexpr nbody_system()
         : bodies{{sun, jupiter, saturn, uranus, neptune}}
     {
@@ -193,6 +190,9 @@ public:
         }
         return e;
     }
+
+private:
+    std::array<body, 5> bodies;
 };
 
 int main(int argc, char* argv[])
