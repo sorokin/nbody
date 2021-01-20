@@ -1,4 +1,4 @@
-.PHONY: all nbody-gcc-stat nbody-clang-stat nbody-rust-stat nbody-gcc-perf nbody-clang-perf nbody-rust-perf
+.PHONY: all stat nbody-gcc-stat nbody-clang-stat nbody-rust-stat nbody-gcc-perf nbody-clang-perf nbody-rust-perf
 
 all: stat
 
