@@ -136,7 +136,7 @@ private:
 public:
     constexpr nbody_system()
         : bodies{{sun, jupiter, saturn, uranus, neptune}}
-	{
+    {
         vec3 p;
         for (size_t i = 0; i != bodies.size(); ++i)
             p += bodies[i].velocity * bodies[i].mass;
